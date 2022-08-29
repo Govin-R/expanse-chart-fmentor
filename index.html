@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
-
+	<link rel="stylesheet" href="./styles.css" type="text/css" media="all">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,27 +15,34 @@
   </style>
 </head>
 <body>
+	<div id="container">
+		<div id="container-1">
+	<div id="box-1">	
+		<p> My balance <span>$921.48</span></p>
+		<div><img src="./images/logo.svg" alt="two-circles"/></div>
+	</div>
+		<div id="box-2">
+			<dl>
+			<dt>Spending - Last 7 days</dt>
+			<div id="graph">
+				<dd>mon<span></span></dd>
+				<dd>tue <span></span></dd>
+				<dd>wed <span></span></dd>
+				<dd>thu <span></span></dd>
+				<dd>fri <span></span></dd>
+				<dd>sat <span></span></dd>
+				<dd>sun <span></span></dd>
+				</div>
+				</dl>
+				<p>Total this month <span>$478.33</span<p>
+				<p><span>+2.4%</span> from last month</p>
+		</div>
 
-  My balance
-  $921.48
+	
+	</div>
+	</div>
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
+<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
