@@ -26,17 +26,23 @@ function draw_graph(val){
 	val2= val2.sort();
 	console.log(val2);
 	for(let i=0; i<val.length; i++){
+		//creates each bar..
 		let graph = document.createElement('dd');
 		let spanH = document.createElement("span");
 		let spanT = document.createElement("span");
 		let spanTText = document.createElement("h4");
 		spanT.setAttribute('id','sphover');
 
-		if(val2<60){
+		if(val2[val2.length-1]<60 || val2.includes(100) ){
 				spanH.style.height= String(((val[i].amount)/100)*15)+"rem";
 		}
 		else{
-						spanH.style.height= String(((val[i].amount)/100)*10)+"rem";
+						spanH.style.height= String(((val[i].amount)/100)*12)+"rem";
+		}
+		console.log(val2[val2.length-1],val[i])
+		if(val[i].amount==val2[val2.length-1]){
+					//	spanH.style.backgroundColor="blue";
+						spanH.setAttribute("id","high");
 		}
 		
 		spanTText.textContent=val[i].amount;
